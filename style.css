@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+}
+
+p,
+a {
+    font-family: "Barlow", sans-serif;
+    font-weight: 900;
+}
+
+body {
+    font-size: 18px;
+    height: 100vh;
+}
+
+/* nav */
+
+.front-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#burger {
+    cursor: pointer;
+}
+
+.cross {
+    display: none;
+}
+
+
+
+.nav-list {
+    padding: 2rem;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 1px 10px 16px;
+    display: none;
+    text-align: center;
+}
+
+.nav-list li a {
+    display: block;
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsl(230, 11%, 40%);
+}
+
+#login a {
+    padding-bottom: 0;
+}
+
+#login {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+#login a::before {
+    content: "";
+    display: block;
+    border: 1px solid;
+    margin-bottom: 2rem;
+    opacity: 0.1;
+}
+
+#hero-image {
+    width: 150%;
+    margin-bottom: 3rem;
+}
+
+/*main*/
+main {
+    padding: 1.5rem;
+    overflow-x: hidden;
+}
+
+#first-p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    color: hsl(230, 11%, 40%);
+}
+
+p strong {
+    background: hsl(230, 29%, 20%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+    color: hsl(230, 29%, 20%);
+}
+
+#second-p {
+    padding-bottom: 2rem;
+    color: hsl(230, 11%, 40%);
+    padding-right: 3rem;
+}
+
+button {
+    background-color: hsl(0, 100%, 68%);
+    color: #fff;
+    padding: 15px 1rem;
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+
+#last-p {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(230, 11%, 40%);
+}
+
+
+/*when event occur*/
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+
+
+/*break-points!*/
+
+@media only screen and (min-width: 800px) {
+    /*    setting the nav*/
+
+
+    #logo {
+        padding: 2rem 5rem;
+    }
+
+    #burger,
+    #cross {
+        display: none;
+    }
+
+    .nav-list {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        vertical-align: middle;
+        padding-top: 4rem;
+        font-size: 1rem;
+    }
+
+    .nav-list li {
+        padding-left: 2rem;
+
+    }
+
+    .nav-list a {
+        cursor: pointer;
+    }
+
+    .nav-list a:hover {
+        text-decoration: underline;
+    }
+
+    #login {
+        width: auto;
+        color: hsl(230, 11%, 40%);
+    }
+
+
+    #login a {
+        padding-bottom: 24px;
+
+
+    }
+
+    #login a::before {
+        content: "*";
+        border: none;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 2rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+
+    }
+
+    #hero-image {
+        width: 90%;
+        order: 1;
+        margin-right: -350px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    main div {
+        width: 50%;
+        padding-left: 4rem;
+        margin-top: 6rem;
+    }
+
+    #first-p {
+        padding-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 6rem
+    }
+
+    #second-p {
+        font-size: 1.7rem;
+        padding-right: 17rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+    #last-p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
