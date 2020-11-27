@@ -42,8 +42,6 @@ body {
     display: none;
 }
 
-
-
 .nav-list {
     padding: 2rem;
     width: 80%;
@@ -139,7 +137,7 @@ button {
     text-transform: uppercase;
     margin-right: 5px;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 5px;
     letter-spacing: 1px;
     border: none;
     cursor: pointer;
@@ -157,7 +155,6 @@ button:hover {
     color: hsl(230, 11%, 40%);
 }
 
-
 /*when event occur*/
 .block {
     display: block;
@@ -167,13 +164,10 @@ button:hover {
     display: none;
 }
 
-
-
 /*break-points!*/
 
 @media only screen and (min-width: 800px) {
     /*    setting the nav*/
-
 
     #logo {
         padding: 2rem 5rem;
@@ -201,7 +195,6 @@ button:hover {
 
     .nav-list li {
         padding-left: 2rem;
-
     }
 
     .nav-list a {
@@ -217,11 +210,8 @@ button:hover {
         color: hsl(230, 11%, 40%);
     }
 
-
     #login a {
         padding-bottom: 24px;
-
-
     }
 
     #login a::before {
@@ -232,86 +222,47 @@ button:hover {
         padding-right: 2rem;
         margin-bottom: 0px;
         padding-bottom: 0px;
-
-
     }
 
     #hero-image {
-        width: 90%;
+        width: 70%;
         order: 1;
-        margin-right: -350px;
+        margin-right: -300px;
+        transform: translateX(9%)
     }
 
     main {
+        width: 100%;
         display: flex;
     }
 
     main div {
-        width: 50%;
+        width: 45%;
         padding-left: 4rem;
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 
     #first-p {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+        letter-spacing: 5px;
     }
 
     h1 {
-        font-size: 6rem
+        font-size: 3.5rem;
     }
 
     #second-p {
-        font-size: 1.7rem;
-        padding-right: 17rem;
-        margin-bottom: 2rem;
+        font-size: 1rem;
+        padding-right: 13rem;
+        margin-bottom: 1rem;
     }
 
     button {
-        font-size: 1.2rem;
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
     }
 
     #last-p {
-        font-size: 1.2rem;
+        font-size: .9rem;
         letter-spacing: 2px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
